@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marius Schanz — Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============================================= -->
+  <!-- HEADER — einmal vorhanden, nicht duplizieren   -->
+  <!-- ============================================= -->
+  <header class="site-header">
+    <div class="site-header__name">MARIUS SCHANZ</div>
+    <div class="site-header__logo">
+      <!-- Logo als Platzhalter-Waveform-Icon. Ersetze bei Bedarf durch dein eigenes SVG/Bild -->
+      <!-- <svg viewBox="0 0 60 40" class="logo-mark" aria-hidden="true">
+        <rect x="2"  y="10" width="4" height="20"/>
+        <rect x="10" y="4"  width="4" height="32"/>
+        <rect x="18" y="14" width="4" height="12"/>
+        <rect x="26" y="0"  width="4" height="40"/>
+        <rect x="34" y="16" width="4" height="8"/>
+        <rect x="42" y="8"  width="4" height="24"/>
+        <rect x="50" y="18" width="4" height="4"/>
+      </svg> -->
+      <img src="images/logo/logo_skizze.jpg" alt="Marius Schanz Logo" class="logo-mark">
+    </div>
+    <div class="site-header__spacer" aria-hidden="true"></div>
+  </header>
+
+  <main class="track-list">
+
+    <!-- ============================================================= -->
+    <!-- TRACK BLOCK — diesen kompletten <section>-Block kopieren       -->
+    <!-- Für jeden neuen Eintrag:                                       -->
+    <!--  1. audio-src im <audio>-Tag anpassen (Pfad zu deiner MP3)     -->
+    <!--  2. Bildpfad im <img> anpassen                                 -->
+    <!--  3. Name, Songtitel, Beschreibungstext anpassen                -->
+    <!--  4. Optional: Beschreibungstext durch Rollen-Liste ersetzen    -->
+    <!--     (siehe auskommentiertes Beispiel weiter unten im Block)    -->
+    <!-- ============================================================= -->
+   
+   <!-- ============== TRACK 3 ============== -->
+    <section class="track">
+
+      <div class="track__main">
+
+        <div class="track__title-row">
+          <h2 class="track__name">Helene</h2>
+          <p class="track__song">farbenpastell</p>
+        </div>
+
+        <p class="track__desc">
+    	  	Produktion aus Weimar, Klavier und Vocals sind live aufgenommen
+    	  	<br>
+			[pop]
+        </p>
+
+
+        <!-- Alternative statt track__desc: eine Rollen-Liste, z. B. für eigene Produktionen -->
+        <ul class="track__roles">
+          <li>Gitarren</li>
+          <li>Produktion</li>
+          <li>Recording Engineer</li>
+          <li>Mixing Engineer</li>
+        </ul>
+
+        <div class="player" data-player>
+          <audio class="player__audio" data-audio preload="metadata">
+            <source src="audio/helene.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+
+          <button class="player__toggle" type="button" data-toggle aria-label="Abspielen">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="6,4 20,12 6,20"/>
+            </svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="4" width="5" height="16"/>
+              <rect x="14" y="4" width="5" height="16"/>
+            </svg>
+          </button>
+
+          <div class="player__waveform" data-waveform role="slider" tabindex="0"
+               aria-label="Wiedergabeposition" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <!-- Balken werden automatisch per JavaScript erzeugt -->
+          </div>
+        </div>
+
+        <hr class="track__divider">
+
+      </div>
+
+      <div class="track__cover">
+        <img src="images/cover_helene.jpg" alt="Cover: Finn Clausen – Bremen Sessions">
+      </div>
+
+    </section>
+    <!-- ============== ENDE TRACK BLOCK — bis hierhin kopieren ============== -->
+ 
+
+ <!-- ============== TRACK 2 ============== -->
+    <section class="track">
+
+      <div class="track__main">
+
+        <div class="track__title-row">
+          <h2 class="track__name">Faraé</h2>
+          <p class="track__song">rise up</p>
+        </div>
+
+        <p class="track__desc">
+    	  	Die Band und Mainvocals sind Live aufgenommen, Backingvocals sind Overdubs
+    	  	<br>
+			[folk]
+        </p>
+
+        <!-- Alternative statt track__desc: eine Rollen-Liste, z. B. für eigene Produktionen  -->
+        <ul class="track__roles">
+          <li>Produktion</li>
+          <li>Recording Engineer</li>
+          <li>Mixing Engineer</li>
+        </ul>
+
+
+        <div class="player" data-player>
+          <audio class="player__audio" data-audio preload="metadata">
+            <source src="audio/rise_up.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+
+          <button class="player__toggle" type="button" data-toggle aria-label="Abspielen">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="6,4 20,12 6,20"/>
+            </svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="4" width="5" height="16"/>
+              <rect x="14" y="4" width="5" height="16"/>
+            </svg>
+          </button>
+
+          <div class="player__waveform" data-waveform role="slider" tabindex="0"
+               aria-label="Wiedergabeposition" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <!-- Balken werden automatisch per JavaScript erzeugt -->
+          </div>
+        </div>
+
+        <hr class="track__divider">
+
+      </div>
+
+      <div class="track__cover">
+        <img src="images/cover_farae.jpg" alt="Cover: Faraé – kids">
+      </div>
+
+    </section>
+    <!-- ============== ENDE TRACK BLOCK — bis hierhin kopieren ============== -->
+
+    <!-- ============== TRACK 1 ============== -->
+    <section class="track">
+
+      <div class="track__main">
+
+        <div class="track__title-row">
+          <h2 class="track__name">Jerry Kuhn</h2>
+          <p class="track__song">Cosmic</p>
+        </div>
+
+		<p class="track__desc">
+    	  	Jazzquintett live aufgenommen in Weimar
+    	  	<br>
+			[jazz]
+        </p>
+
+
+        <!-- Alternative statt track__desc: eine Rollen-Liste, z. B. für eigene Produktionen -->
+        <ul class="track__roles">
+          <li>Recording Engineer</li>
+          <li>Mixing Engineer</li>
+        </ul>
+
+        <div class="player" data-player>
+          <audio class="player__audio" data-audio preload="metadata">
+            <source src="audio/Cosmic.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+
+          <button class="player__toggle" type="button" data-toggle aria-label="Abspielen">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="6,4 20,12 6,20"/>
+            </svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="4" width="5" height="16"/>
+              <rect x="14" y="4" width="5" height="16"/>
+            </svg>
+          </button>
+
+          <div class="player__waveform" data-waveform role="slider" tabindex="0"
+               aria-label="Wiedergabeposition" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <!-- Balken werden automatisch per JavaScript erzeugt -->
+          </div>
+        </div>
+
+        <hr class="track__divider">
+
+      </div>
+
+      <div class="track__cover">
+        <img src="images/cover_jekuh.jpg" alt="Cover: JeKuh – Cosmic">
+      </div>
+
+    </section>
+    <!-- ============== ENDE TRACK BLOCK — bis hierhin kopieren ============== -->
+
+
+  	<!-- ============== TRACK 4 ============== -->
+    <section class="track">
+
+      <div class="track__main">
+
+        <div class="track__title-row">
+          <h2 class="track__name">TILT</h2>
+          <p class="track__song">questionable choices</p>
+        </div>
+
+        <p class="track__desc">
+    	  	Aktuelles Bandprojekt.
+    	  	<br>
+			[r`n`b]
+        </p>
+
+
+        <!-- Alternative statt track__desc: eine Rollen-Liste, z. B. für eigene Produktionen -->
+        <ul class="track__roles">
+          <li>Gitarren</li>
+          <li>Produktion</li>
+          <li>Recording Engineer</li>
+          <li>Mixing Engineer</li>
+        </ul>
+
+        <div class="player" data-player>
+          <audio class="player__audio" data-audio preload="metadata">
+            <source src="audio/Questionable_Choices.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+
+          <button class="player__toggle" type="button" data-toggle aria-label="Abspielen">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="6,4 20,12 6,20"/>
+            </svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="4" width="5" height="16"/>
+              <rect x="14" y="4" width="5" height="16"/>
+            </svg>
+          </button>
+
+          <div class="player__waveform" data-waveform role="slider" tabindex="0"
+               aria-label="Wiedergabeposition" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <!-- Balken werden automatisch per JavaScript erzeugt -->
+          </div>
+        </div>
+
+        <hr class="track__divider">
+
+      </div>
+
+      <div class="track__cover">
+        <img src="images/cover_tilt.jpg" alt="Cover: tilt – Questionable Choices">
+      </div>
+
+    </section>
+    <!-- ============== ENDE TRACK BLOCK — bis hierhin kopieren ============== -->
+
+
+    <!-- ============== TRACK 5 ============== -->
+    <section class="track">
+
+      <div class="track__main">
+
+        <div class="track__title-row">
+          <h2 class="track__name">Max Verclas' Ministry of Affection</h2>
+          <p class="track__song">flow</p>
+        </div>
+
+        <p class="track__desc">
+    	  	aktuelles Bandprojekt
+    	  	<br>
+			[jazz]
+        </p>
+
+
+        <!-- Alternative statt track__desc: eine Rollen-Liste, z. B. für eigene Produktionen -->
+        <ul class="track__roles">
+          <li>Gitarre</li>
+          <li>Assistant Engineer</li>
+        </ul>
+
+        <div class="player" data-player>
+          <audio class="player__audio" data-audio preload="metadata">
+            <source src="audio/Flow V1.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+
+          <button class="player__toggle" type="button" data-toggle aria-label="Abspielen">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="6,4 20,12 6,20"/>
+            </svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="4" width="5" height="16"/>
+              <rect x="14" y="4" width="5" height="16"/>
+            </svg>
+          </button>
+
+          <div class="player__waveform" data-waveform role="slider" tabindex="0"
+               aria-label="Wiedergabeposition" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <!-- Balken werden automatisch per JavaScript erzeugt -->
+          </div>
+        </div>
+
+        <hr class="track__divider">
+
+      </div>
+
+      <div class="track__cover">
+        <img src="images/cover_moa.jpg" alt="Cover: Ministry of Affection – flow">
+      </div>
+
+    </section>
+    <!-- ============== ENDE TRACK BLOCK — bis hierhin kopieren ============== -->
+
+
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
